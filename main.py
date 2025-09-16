@@ -1,8 +1,9 @@
 import feedparser
 import telebot
 import time
+import os
 
-TOKEN = "1642655410:AAGMArNZH_WLlU9TBdNSgQCJ6CLCq-0QkgE"
+TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_ID = "@Ukrainian_Global_News"
 
 bot = telebot.TeleBot(TOKEN)
